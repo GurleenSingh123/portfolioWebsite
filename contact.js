@@ -1,15 +1,10 @@
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
-const phoneInput = document.getElementById('num');
-const interestInput = document.getElementById('interest');
-const budgetInput = document.getElementById('budget');
-const countryInput = document.getElementById('country');
 const msgInput = document.getElementById('msg');
 const form = document.getElementById('myForm')
 
 const submitBtn = document.getElementById('submitBtn');
 const emailErr = document.getElementById('emailErr');
-const phoneErr = document.getElementById('phoneErr');
 const msgErr = document.getElementById('msgErr');
 const successMsg = document.getElementById('successMsg');
 
@@ -27,24 +22,6 @@ msgInput.addEventListener('input', function() {
     checkInput();
 
 })
-
-phoneInput.addEventListener('input', function () {
-
-    if(phoneInput.value === ''){
-        phoneErr.textContent = '';
-    }
-        
-    else if (phoneInput.value.length === 10) {
-        phoneErr.textContent = '';
-    }
-
-    else {
-        phoneErr.textContent = 'Invalid Number';
-    }
-
-    checkInput();
-
-});
 
 emailInput.addEventListener('input', function () {
     const emailExpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -70,7 +47,7 @@ form.addEventListener('submit', function () {
     
     if (submitBtn.disabled) return;
 
-    successMsg.textContent = 'Sending Message...';
+    successMsg.textContent = 'Submitting... ';
     submitBtn.disabled = true;
 })
 
@@ -79,11 +56,7 @@ function checkInput(){
     const inputs = 
         nameInput.value.trim() !== '' && 
         emailInput.value.trim() !== '' && 
-        phoneInput.value.trim().length == 10 &&
-        msgInput.value.trim().length >= 20 &&
-        budgetInput.value.trim() !== '' &&
-        countryInput.value.trim() !== '' &&
-        interestInput.value.trim() !== ''
+        msgInput.value.trim().length >= 20 
 
         submitBtn.disabled = !inputs;
 }
