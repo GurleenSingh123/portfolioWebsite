@@ -9,9 +9,21 @@ fetch('/navBar.html')
     const navList = document.querySelector('.navList');
     const navLinks = document.querySelectorAll('.navList a');
     
-    menuBtn.addEventListener('click', function () {
+    menuBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
       navList.classList.toggle('active')
     })
+
+      document.addEventListener('click', function (e) {
+    if (
+      navList.classList.contains('active') &&
+      !navList.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      navList.classList.remove('active');
+    }
+
+  });
 
     navLinks.forEach(list => {
       list.addEventListener('click', function (e) {
@@ -28,4 +40,4 @@ fetch('/navBar.html')
     });
   })
 
-  .catch(error => console.error('Navbar load error:', error));
+  .catch(error => console.error('Navbar load error:', error))
