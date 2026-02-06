@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color: #222;
+    background-color: #111;
     color: white;
 }
 
@@ -153,7 +153,6 @@ a{
 }
 
 .navList a:hover{
-    text-decoration: underline;
     color: rgb(215, 21, 215);
 }
 
@@ -176,7 +175,9 @@ a{
 }
 
 #firstName{
-    color: rgb(215, 21, 215);
+    background: linear-gradient(45deg, rgb(215, 21, 215), rgb(150, 10, 200));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #lastName{
@@ -185,6 +186,8 @@ a{
 
 .name{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -298,12 +301,20 @@ a{
     flex-direction: column;
 }
 
+.serviceSection{
+    padding: 60px 40px;
+}
+
 .serHeadSec{
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .serviceBox{
-    background-color: purple;
+    background: linear-gradient(45deg, rgb(215, 21, 215), rgb(150, 10, 200));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
     padding: 10px;
     min-height: 160px;
@@ -328,14 +339,9 @@ a{
 }
 
 .serHead{
-    font-size: 50px;
-    margin-bottom: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.head{
     font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .serviceDetail{
@@ -386,77 +392,68 @@ a{
     transition: box-shadow 0.3s ease, transform 0.2s ease, background 0.3s ease;
 }
 
+.toolSection{
+    padding: 60px 40px;
+}
+
 .spanTag{
-    color: rgb(215, 21, 215);
+    background: linear-gradient(45deg, rgb(215, 21, 215), rgb(150, 10, 200));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .toolHeadDes{
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .toolWork{
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 5px;
+    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.desingTag{
-    font-size: 30px;
+.designTag{
+    font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .toolItem{
-    margin: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blue(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 25px;
+    border-radius: 15px;
+    transition: 0.4s ease;
+}
+
+.toolItem:hover{
+    transform: translateY(-10px);
+    border: 2px solid rgb(215, 21, 215);
+    box-shadow: 0 0 20px rgba(255, 0, 225, 0.447);
 }
 
 .tool{
-    width: 150px;
-    height: 200px;
-    background-color: #f0f0f0;
-    border: 2px solid black;
-    border-radius: 10px;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
-    align-items: center;
+}
+
+.toolBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
 }
 
 .toolHead{
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.toolBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    gap: 10px;
-}
-
-.toolPer {
-    font-size: 18px;
-    font-weight: 600;
-    color: #111;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-#toolFigma{
-    width: 90px;
-}
-
-#toolVs{
-    width: 70px;
-}
-
-#toolGit{
-    width: 50px;
 }
 
 .logoImg{
@@ -471,27 +468,37 @@ a{
 }
 
 .toolName{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.educationSection{
+    padding: 60px 40px;
+}
+
+.educationHeadDes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .eduHead{
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 15px;
 }
 
 .educatTag{
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 15px;
+    margin-top: 5px;
 }
 
 .educationDetail{
     max-width: 800px;
-    margin: 80px auto;
+    margin: 40px auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -550,186 +557,140 @@ a{
     color: #9ca3af;
 }
 
-.conHead{
+.bothContactSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    gap: 50px;
+}
+
+.contactSec {
+    flex: 1;
+}
+
+.contactHead {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.conHead {
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(215, 21, 215);
+    margin-bottom: 10px;
+}
+
+.conDetail {
+    opacity: 0.8;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
-.conDetail{
-    font-size: 30px;
-    margin-bottom: 5px;
+.detailContact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
 }
 
-.contactHead{
-    font-size: 40px;
-    margin-bottom: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.detailContact{
-    font-size: 30px;
-    margin-bottom: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#paraDetailContact{
-    margin-bottom: 30px;
-}
-
-.conLogo{
-    margin-right: 10px;
+.conLogo {
     width: 30px;
-    border-radius: 10px;
+    height: 30px;
+    border-radius: 50%;
 }
 
-.conAnchor{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.conAnchor {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 30px;
 }
 
-.contactSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.contactSection {
+    flex: 1;
 }
 
-.conRightSection{
-    width: 30%;
+.conRightSection {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
     padding: 40px;
-    border-radius: 20px;
-    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.inputSection {
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
-.contactSec{
-    margin: 20px;
+.field {
+    width: 100%;
 }
 
-.btnContact{
-    display: inline-block;
-    font-size: 20px;
-    padding: 10px 20px;
-    border: 2px solid rgb(215, 21, 215);
-    border-radius: 20px;
-    background-color: #111;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+.inputField {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
 
-.btnContact:hover{
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0px 2px 20px rgb(225, 9, 171);
-}
-
-input.inputField{
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.inputField{
-    padding: 15px;
-    font-size: 18px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
     border: none;
-    margin-bottom: 20px;
-}
+    border-radius: 8px;
 
-label{
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-.inputField:focus{
-    border: 2px solid rgb(215, 21, 215);
+    color: white;
     outline: none;
 }
 
-.errMsg{
+.inputField::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.textField textarea {
+    height: 120px;
+    resize: none;
+}
+
+.errMsg {
     color: red;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 
-.successMsg{
-    color: rgb(9, 215, 9);
+.btnn {
+    text-align: center;
 }
 
-.field{
-    display: flex;
+.submitBtn {
     width: 100%;
-    flex-direction: column;
-}
+    padding: 12px;
 
-textarea.inputField{
-    height: 100px;
-    border-radius: 20px;
-}
+    background: linear-gradient(
+        45deg,
+        rgb(215, 21, 215),
+        rgb(150, 10, 200)
+    );
 
-.textField{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-
-.submitBtn{
-    padding: 18px 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    border-radius: 20px;
-    cursor: pointer;
     border: none;
-    background: linear-gradient(135deg, #ff4ecd, #7b5cff);
+    border-radius: 30px;
+
     color: white;
-    transition: all 0.25s ease;
-}
+    font-size: 16px;
 
-.submitBtn:disabled{
-    cursor: not-allowed;
-    background: #6b6b6b;
-    box-shadow: none;
-}
-
-.submitBtn:not(:disabled):hover{
-    transform: translateY(-2px);
-    box-shadow: 0 2px 15px rgba(255, 78, 205, 0.45), 0 3px 10px rgba(123, 92, 255, 0.35);
-}
-
-.goBackBtn{
-    padding: 15px 20px;
-    font-size: 20px;
-    background-color: #111;
-    color: white;
-    border-radius: 20px;
     cursor: pointer;
-    border: 2px solid rgb(215, 21, 215);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    transition: transform 0.2s ease;
+    transition: 0.3s;
 }
 
-.goBackBtn:hover{
-    color: white;
-    box-shadow: 0px 2px 12px rgb(215, 21, 215);
-    transform: translateY(-2px);
-}
-
-.btnn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 20px;
+.submitBtn:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
 }
 
 #successMsg{
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(87, 228, 87);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -967,13 +928,14 @@ textarea.inputField{
         padding: 10px 15px;
         font-size: 15px;
     }
-
-    .head{
-        font-size: 40px;
-    }
     
-    .serHeadSec{
-        margin: 15px;
+    .serviceSection{
+        padding: 55px 35px;
+    }
+
+    .serviceBox{
+        padding: 8px;
+        min-height: 150px; 
     }
 
     .serviceHead{
@@ -981,23 +943,17 @@ textarea.inputField{
     }
 
     .serHead{
-        font-size: 40px;
-        margin-bottom: 12px;
-    }
-
-    .head{
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .serviceDetail{
-        font-size: 25px;
+        font-size: 20px;
         height: 180px;
-        margin: 14px;
     }
 
-    .serviceDetail.show{
-        max-height: 180px;
-        opacity: 1;
+    .box{
+        gap: 18px;
+        padding: 18px;
     }
 
     .serviceDetail::-webkit-scrollbar{
@@ -1005,63 +961,61 @@ textarea.inputField{
     }
 
     .learnBtn{
-        font-size: 14px;
+        font-size: 13px;
+        width: 45%;
     }
 
-    .learnBtn:hover{
-        transform: translateY(-1px);
-        box-shadow: 1px 1px 20px rgb(0, 0, 0);
-        background: white;
-        color: black; 
-    }
-
-    .desingTag{
-        font-size: 25px;
-    }
-
-    .toolItem{
-        margin: 35px;
-    }
-
-    .tool{
-        width: 130px;
-        height: 180px;
-    }
-
-    .toolBox{
-        margin: 18px;
-    }
-
-    .toolPer{
-        font-size: 15px;
-    }
-
-    #toolFigma{
-        width: 80px;
-    }
-
-    .toolName{
-        font-size: 20px;
+    .toolSection{
+        padding: 55px 35px;
     }
 
     .toolWork{
-        font-size: 17px;
+        font-size: 13px;
+    }
+
+    .designTag{
+        font-size: 25px;
+    }
+
+    .toolBox{
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .toolHead{
+        font-size: 35px;
+    }
+
+    .logoImg{
+        width: 60px;
+        height: 60px;
+    }
+
+    .toolName{
+        font-size: 18px;
+    }
+
+    .educationSection{
+        padding: 55px 35px;
     }
 
     .eduHead{
         font-size: 35px;
     }
 
+    .educatTag{
+        font-size: 25px;
+    }
+
     .educationDetail{
         max-width: 700px;
-        margin: 70px auto;
-        padding: 0 18px;
-        gap: 25px;
     }
 
     .eduText{
         padding: 18px;
+        border-radius: 18px;
         font-size: 40px;
+        margin-bottom: 18px;
     }
 
     .eduDetail{
@@ -1069,7 +1023,7 @@ textarea.inputField{
     }
 
     .eduYear{
-        font-size: 25px;
+        font-size: 27px;
     }
 
     .edu{
@@ -1077,75 +1031,87 @@ textarea.inputField{
     }
 
     .eduDegree{
-        font-size: 17px;
-    }
-
-    .conDetail{
-        font-size: 25px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-bottom: 5px;
-    }
-
-    .contactHead{
-        font-size: 35px;
-    }
-
-    .detailContact{
-        font-size: 25px;
-    }
-
-    #paraDetailContact{
-        margin-bottom: 25px;
-    }
-
-    .conLogo{
-        margin-right: 8px;
-        width: 25px;
-    }
-
-    .contactSec{
-        margin: 18px;
-    }
-
-    .btnContact{
-        font-size: 18px;
-        padding: 8px 17px;
-    }
-
-    input.inputField{
-        padding: 8px;
-    }
-
-    .inputField{
-        padding: 12px;
         font-size: 15px;
     }
 
-    label{
-        font-size: 27px;
+    .bothContactSection {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .errMsg{
+    .contactSec {
+        flex: 1;
+    }
+
+    .contactHead {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    .conHead {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+
+    .conDetail {
+        margin-bottom: 18px;
         font-size: 17px;
     }
 
-    .submitBtn{
-        padding: 15px 22px;
-        font-size: 22px;
+    .detailContact {
+        gap: 10px;
+        margin: 10px 0;
     }
 
-    .goBackBtn{
-        padding: 13px 18px;
-        font-size: 18px;
+    .conLogo {
+        width: 30px;
+        height: 30px;
     }
 
-    .btnn{
-        margin-top: 17px;
-        gap: 17px;
+    .conAnchor {
+        font-size: 27px;
+    }
+
+    .contactSection {
+        flex: 1;
+    }
+
+    .conRightSection {
+        width: 450px;
+        padding: 45px 35px;
+        border-radius: 14px;
+    }
+
+    .inputField {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .textField textarea {
+        height: 110px;
+    }
+
+    .errMsg {
+        color: red;
+        font-size: 17px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .btnn {
+        text-align: center;
+    }
+
+    .submitBtn {
+        width: 90%;
+        padding: 8px;
+        border-radius: 25px;
     }
 
     #successMsg{
-        font-size: 22px;
+        font-size: 17px;
     }
 
     .thankHead{
@@ -1162,7 +1128,7 @@ textarea.inputField{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 630px){
     .conRightSection{
         width: 70%;
         margin: 17px;
@@ -1270,31 +1236,32 @@ textarea.inputField{
         padding: 8px 12px;
         font-size: 12px;
     }
-    
+
+    .serviceSection{
+        padding: 50px 30px;
+    }
+
+    .serviceBox{
+        padding: 7px;
+        min-height: 140px; 
+    }
+
     .serviceHead{
         font-size: 20px;
     }
 
     .serHead{
-        font-size: 35px;
-    }
-
-    .head{
-        font-size: 25px;
-    }
-
-    .box{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        font-size: 30px;
     }
 
     .serviceDetail{
-        font-size: 20px;
-        height: 150px;
-        margin: 12px;
+        font-size: 18px;
+        height: 160px;
     }
 
-    .serviceDetail.show{
-        max-height: 150px;
+    .box{
+        gap: 16px;
+        padding: 16px;
     }
 
     .serviceDetail::-webkit-scrollbar{
@@ -1303,51 +1270,68 @@ textarea.inputField{
 
     .learnBtn{
         font-size: 12px;
+        width: 40%;
     }
 
-    .desingTag{
-        font-size: 20px;
-    }
-
-    .toolItem{
-        margin: 30px;
-    }
-
-    .toolBox{
-        flex-direction: column;
-        margin: 15px;
-    }
-
-    .toolPer{
-        font-size: 12px;
-    }
-
-    #toolFigma{
-        width: 70px;
-    }
-
-    .toolName{
-        font-size: 17px;
+    .toolSection{
+        padding: 50px 30px;
     }
 
     .toolWork{
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .designTag{
+        font-size: 20px;
+    }
+
+    .toolBox{
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .toolHead{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .logoImg{
+        width: 55px;
+        height: 55px;
+    }
+
+    .toolName{
+        font-size: 16px;
+    }
+
+    .toolBox{
+        grid-template-columns: repeat(2, 1fr);
+    }   
+
+    .toolItem{
+        padding: 20px 20px;
+    }
+
+    .educationSection{
+        padding: 50px 30px;
     }
 
     .eduHead{
         font-size: 30px;
     }
 
+    .educatTag{
+        font-size: 20px;
+    }
+
     .educationDetail{
         max-width: 600px;
-        margin: 60px auto;
-        padding: 0 16px;
-        gap: 20px;
     }
 
     .eduText{
         padding: 16px;
-        font-size: 35px;
+        font-size: 30px;
+        margin-bottom: 16px;
     }
 
     .eduDetail{
@@ -1355,7 +1339,7 @@ textarea.inputField{
     }
 
     .eduYear{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .edu{
@@ -1366,75 +1350,64 @@ textarea.inputField{
         font-size: 14px;
     }
 
-    .conDetail{
-        font-size: 20px;
-        margin-bottom: 4px;
+    .bothContactSection {
+        gap: 10px;
     }
 
-    .contactHead{
+    .contactHead {
         font-size: 30px;
+        margin-bottom: 5px;
     }
 
-    .conHead{
-        font-size: 25px;
+    .conHead {
+        font-size: 20px;
+        margin-bottom: 5px;
     }
 
-    .detailContact{
+    .conDetail {
+        margin-bottom: 16px;
+        font-size: 15px;
+    }
+
+    .conLogo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .conAnchor {
         font-size: 20px;
     }
 
-    #paraDetailContact{
-        margin-bottom: 20px;
+    .conRightSection {
+        width: 300px;
+        padding: 40px 30px;
+        border-radius: 13px;
     }
 
-    .conLogo{
-        margin-right: 6px;
-        width: 22px;
+    .inputField {
+        width: 100%;
+        border-radius: 12px;
+        padding: 8px;
+        margin-bottom: 15px;
     }
 
-    .contactSec{
-        margin: 16px;
+    .textField textarea {
+        height: 90px;
     }
 
-    .btnContact{
-        font-size: 15px;
-        padding: 6px 15px;
-    }
-
-    input.inputField{
-        padding: 6px;
-    }
-
-    .inputField{
-        padding: 10px;
+    .errMsg {
         font-size: 12px;
     }
 
-    label{
-        font-size: 20px;
-    }
-
-    .errMsg{
+    .submitBtn {
+        width: 80%;
+        padding: 8px;
+        border-radius: 25px;
         font-size: 14px;
     }
 
-    .submitBtn{
-        padding: 12px 18px;
-        font-size: 18px;
-    }
-
-    .goBackBtn{
-        padding: 10px 15px;
-        font-size: 15px;
-    }
-
-    .btnn{
-        margin-top: 15px;
-        gap: 15px;
-    }
-
     #successMsg{
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .thankHead{

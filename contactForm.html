@@ -7,46 +7,72 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contactSection">
-        <div class="conRightSection">
-            <form id="myForm" name="contact" method="POST" action="https://formsubmit.co/gurleen321cl@gmail.com">
-                <input type="hidden" name="_next" value="https://portfolioweb1001.netlify.app/thankyou.html">
-                <input type="hidden" name="_subject" value="New Contact Form Message">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
+    <div id="navBar"></div>
 
-                <div class="inputSection" id="inputSec">
-                    <div class="field">
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" class="inputField" placeholder="Enter your name" required>
-                    </div>
-                    
-                    <div class="field">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" class="inputField" placeholder="Enter your email" required>
-                        <p class="errMsg" id="emailErr"></p>
-                    </div>
-                </div>
+    <div class="bothContactSection">
+
+        <section class="contactSec" id="contact">
+            <h3 class="contactHead">Contact Us</h3>
             
- 
-                <div class="textField">
-                    <label for="message">Your Message:</label>
-                    <textarea id="msg" name="message" class="inputField" placeholder="Enter here..." required></textarea>
-                    <p class="errMsg" id="msgErr"></p>
-                </div> 
+            <h3 class="conHead">Let's Work Together</h3>
+            
+            <p class="conDetail">Feel free to reach out for projects, collaborations, or questions.</p>
+            
+            <p class="detailContact">
+                <img src="profile-image.jpg" alt="Name" class="conLogo">
+                <span class="conAnchor">Gurleen Singh</span>
+            </p>
+            
+            <p class="detailContact">
+                <img src="mail-logo.webp" alt="mailLogo" class="conLogo">
+                <span class="conAnchor">gurleen321cl@gmail.com</span>
+            </p>
+            
+            <p class="detailContact" id="paraDetailContact">
+                <img src="location-logo.avif" alt="LocationLogo" class="conLogo"> 
+                <span class="conAnchor">India</span>
+            </p>
+        
+        </section>
+    
+        <section class="contactSection">
+            <div class="conRightSection">
+                <form id="myForm" name="contact" method="POST" action="https://formsubmit.co/gurleen321cl@gmail.com">
+                    <input type="hidden" name="_next" value="https://portfolioweb1001.netlify.app/thankyou.html">
+                    <input type="hidden" name="_subject" value="New Contact Form Message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
 
-                <div class="btnn">
-                    <a href="contact.html" class="goBackBtn">Go back</a>
-                    <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
-                </div>
+                    <div class="inputSection" id="inputSec">
+                        <div class="field">
+                            <input type="text" id="name" name="name" class="inputField" placeholder="Enter your name" required>
+                        </div>
 
-                <p id="successMsg"></p>
-                    
-            </form>
+                        <div class="field">
+                            <input type="email" id="email" name="email" class="inputField" placeholder="Enter your email" required>
+                            <p class="errMsg" id="emailErr"></p>
+                        </div>
+                    </div>
 
-        </div> 
+                    <div class="textField">
+                        <textarea id="msg" name="message" class="inputField" placeholder="Enter here..." required></textarea>
+                        <p class="errMsg" id="msgErr"></p>
+                    </div> 
+
+                    <div class="btnn">
+                        <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
+                    </div>
+
+                    <p id="successMsg"></p>
+
+                </form>
+
+            </div> 
+        </section>
+        
     </div>
 
+    <script src="script.js"></script>
     <script src="contact.js"></script>
 </body>
 </html>
