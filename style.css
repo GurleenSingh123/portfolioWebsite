@@ -225,6 +225,7 @@ a{
 
 .text{
     background: linear-gradient(45deg, rgb(215, 21, 215), rgb(150, 10, 200));
+    background-clip: text;  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
