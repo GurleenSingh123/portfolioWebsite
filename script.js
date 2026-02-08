@@ -29,6 +29,7 @@ fetch('/navBar.html')
       list.addEventListener('click', function (e) {
         e.preventDefault();
         
+        navList.classList.remove('active');
         const href = this.href;
         
         document.body.classList.add('fade-out');
