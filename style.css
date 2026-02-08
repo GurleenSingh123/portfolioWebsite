@@ -785,8 +785,7 @@ a{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    flex-direction: column;
-    background-color: #222;
+    background-color: #111;
     animation: fadeSlide 0.8s ease-out forwards;
 }
 
@@ -802,34 +801,54 @@ a{
     }
 }
 
+.thankSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    padding: 50px 30px;
+    background-color: #181818;
+    max-width: 450px;
+    box-shadow: 0 0 20px rgba(215, 21, 215, 0.4);
+}
+
 .thankHead{
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: Red;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(215, 21, 215);
 }
 
 .thankMsg{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: red;
+    color: #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icon{
+    font-size: 40px;
+    color: rgb(215, 21, 215);
 }
 
 .backBtn{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 8px;
-    font-size: 17px;
-    border: none;
-    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid rgb(215, 21, 215);
+    border-radius: 25px;
     margin-top: 15px;
-    color: #222;
-    background-color: white;
+    color: white;
+    background-color: #111;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .backBtn:hover{
-    background:  #0b5cd6;
+    background:  rgb(215, 21, 215);
     color: white;
+    box-shadow: 0 0 15px rgb(215, 21, 215);
     transform: translateY(-2px);
 }
 
@@ -1237,18 +1256,27 @@ a{
         font-size: 17px;
     }
 
-    .thankHead{
-        font-size: 40px;
+    .thankSection{
+        padding: 40px 25px;
     }
 
-    .thankMsg{
+    .thankHead{
         font-size: 25px;
     }
 
+    .thankMsg{
+        font-size: 17px;
+    }
+
+    .icon{
+        font-size: 30px;
+    }
+
     .backBtn{
-        padding: 7px;
+        padding: 8px 17px;
         font-size: 15px;
     }
+
 }
 
 @media(max-width: 720px){
@@ -1590,16 +1618,24 @@ a{
         font-size: 15px;
     }
 
-    .thankHead{
-        font-size: 30px;
+    .thankSection{
+        padding: 30px 20px;
     }
 
-    .thankMsg{
+    .thankHead{
         font-size: 20px;
     }
 
+    .thankMsg{
+        font-size: 15px;
+    }
+
+    .icon{
+        font-size: 25px;
+    }
+
     .backBtn{
-        padding: 5px;
+        padding: 6px 15px;
         font-size: 12px;
     }
 }
