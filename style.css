@@ -8,12 +8,45 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #111;
     color: white;
+    opacity: 0;
+    filter: blur(4px);
+    animation: fadeIn 0.7s ease forwards;
 }
 
-.portfolioSection{
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+body.fade-out {
+    animation: fadeOut 0.6s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        filter: blur(4px);
+        transform: translateY(-15px);
+    }
+}
+
+/* .portfolioSection{
     display: flex;
     gap: 40px;
     align-items: center;
@@ -110,27 +143,19 @@ body{
     transform: translateY(-4px);
     color: white;
     box-shadow: 0px 2px 15px rgb(215, 21, 215);
-}
-
-.fade-out{
-    animation: fadeOut 1s ease forwards;
-}
-
-@keyframes fadeOut{
-    to{
-        opacity: 0;
-    }
-}
+}*/
 
 .navBar{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 30px;
+    padding: 20px 40px;
+    overflow: hidden;
 }
 
 .navList{
     display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 25px;
 }
@@ -162,6 +187,12 @@ a{
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
+    border-radius: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 15px;
+    font-size: 20px;
 }
 
 #contactBtn:hover{
@@ -182,6 +213,7 @@ a{
 
 #lastName{
     color: white;
+    margin-right: 10px;
 }
 
 .name{
@@ -192,10 +224,12 @@ a{
 }
 
 .text{
-    color: rgb(215, 21, 215);
+    background: linear-gradient(45deg, rgb(215, 21, 215), rgb(150, 10, 200));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.contactBtn{
+/* .contactBtn{
     padding: 5px 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -208,7 +242,7 @@ a{
 
 .contactBtn:hover{
     background-color: rgb(230, 21, 230);
-}
+} */
 
 .personalImg{
     width: 250px;
@@ -220,6 +254,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 70vh;
     padding: 100px;
     gap: 40px;
 }
@@ -254,51 +289,96 @@ a{
     color: white;
 }
 
-.aboutHead{
-    color: rgb(215, 21, 215);
-    font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.aboutSection {
+    padding: 40px 80px;
 }
 
-.question{
-    color: white;
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.ansQues{
-    font-size: 30px;
-    color: rgb(233, 126, 247);
-    margin-bottom: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.skillHead{
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(215, 21, 215);
-    margin-bottom: 15px;
-    margin-top: 50px;
-}
-
-.skillList{
-    color: white;
+.forImage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sameDes{
-    color: rgb(215, 21, 215);
+    padding: 30px;
+    /* display: flex; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.skills{
-    font-size: 25px;
+.aboutInnerData{
+    max-width: 700px;
+}
+
+.aboutImage{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.aboutHead{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    /* color: #d466ff; */
+    background: linear-gradient(45deg, rgb(215, 21, 215), rgb(150, 10, 200));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
 }
 
-.detailData{
-    display: flex;
-    flex-direction: column;
+.question {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.ansQues {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #d0d0d0;
+}
+
+.skillHead{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    background: linear-gradient(45deg, rgb(215, 21, 215), rgb(150, 10, 200));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.skillSection {
+    padding: 0 80px 60px 100px;
+    margin-left: 4px;
+}
+
+.skillContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.minorHead{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.skillDes{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.skillCard {
+    background-color: #141417;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid rgb(215, 21, 215);
+    transition: 0.3s;
+}
+
+.skillCard:hover {
+    transform: translateY(-5px);
+    background-color: #18181b;
+    box-shadow: 0 2px 20px rgb(215, 21, 215);
 }
 
 .serviceSection{
@@ -424,7 +504,7 @@ a{
 
 .toolItem{
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blue(10px);
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px 25px;
     border-radius: 15px;
@@ -572,15 +652,18 @@ a{
 .contactHead {
     font-size: 50px;
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .conHead {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: rgb(215, 21, 215);
     margin-bottom: 10px;
 }
 
 .conDetail {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     opacity: 0.8;
     margin-bottom: 20px;
     font-size: 20px;
@@ -600,6 +683,7 @@ a{
 }
 
 .conAnchor {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     color: white;
     transition: 0.3s;
@@ -770,15 +854,23 @@ a{
 }
 
 @media(max-width:1300px){
+
     .conRightSection{
-        width: 40%;
+        width: 90%;
         padding: 40px;
     }
 }
 
 @media(max-width: 1000px){
+
+    .navBar{
+        padding: 15px 20px;
+    }
+
+
+
     .conRightSection{
-        width: 50%;
+        width: 80%;
         padding: 35px;
     }
 }
@@ -798,6 +890,7 @@ a{
     }
 
     .navList{
+        align-items: flex-start;
         position: fixed;
         height: 100vh;
         right: -200px;
@@ -827,15 +920,14 @@ a{
         font-size: 25px;
     }
 
-    .contactBtn{
-        padding: 8px 17px;
-        border-radius: 17px;
+    #contactBtn{
+        padding: 4px 10px;
         font-size: 15px;
     }
 
     .homeData{
         order: 2;
-        margin-top: 20px;
+        padding: 0 50px;
     }
 
     .personalImg{
@@ -845,11 +937,11 @@ a{
 
     .homeDetail{
         flex-direction: column;
-        padding: 50px;
-        gap: 30px;
+        padding: 20px;
+        gap: 5px;
     }
 
-    .portfolioSection{
+    /* .portfolioSection{
         gap: 30px;
     }
 
@@ -892,7 +984,7 @@ a{
         border-radius: 18px;
         padding: 9px 23px; 
         font-size: 17px;
-    }
+    } */
 
     #headline{
         font-size: 40px;
@@ -902,33 +994,62 @@ a{
         font-size: 25px;
     }
 
-    .sameDes{
-        order: 2;
-        font-size: 25px;
+    .aboutSection {
+        padding: 40px 80px;
     }
 
-    .question{
-        font-size: 35px;
+    .aboutInnerData{
+        margin-right: 10px;     
+        max-width: 600px;
+    }
+
+    .aboutImage{
+        width: 250px;
+        height: 250px;
+    }
+
+    .aboutHead{
+        font-size: 45px;
+        margin-bottom: 8px;
+    }
+
+    .question {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .ansQues {
+        font-size: 18px;
+        line-height: 1.5;
     }
 
     .skillHead{
-        font-size: 40px;
-        margin-bottom: 10px;
+        font-size: 45px;
+        margin-bottom: 12px;
     }
 
-    .skillList{
-        font-size: 25px;
+    .skillSection {
+        padding: 0 70px 50px 90px;
     }
 
-    .detailData{
-        order: 1;
+    .skillContainer {
+        gap: 20px;
     }
 
-    .portfolioBtn{
-        padding: 10px 15px;
+    .minorHead{
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .skillDes{
         font-size: 15px;
     }
-    
+
+    .skillCard {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
     .serviceSection{
         padding: 55px 35px;
     }
@@ -980,6 +1101,7 @@ a{
     .toolBox{
         gap: 25px;
         margin-top: 40px;
+        padding: 0 20px;
     }
 
     .toolHead{
@@ -1128,6 +1250,27 @@ a{
     }
 }
 
+@media(max-width: 720px){
+    .forImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .aboutImage{
+        order: 1;
+    }
+    
+    .sameDes{
+        order: 2;
+    }
+
+    .aboutSection{
+        padding: 20px 20px;  
+    }
+}
+
 @media (max-width: 630px){
     .conRightSection{
         width: 70%;
@@ -1144,6 +1287,10 @@ a{
         padding: 70px 17px;      
     }
 
+    #contactBtn{
+        font-size: 12px;
+    }
+
     a{
         font-size: 20px;
     }
@@ -1153,7 +1300,7 @@ a{
     }
 
     .homeData{
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     .personalImg{
@@ -1161,11 +1308,11 @@ a{
     }
 
     .homeDetail{
-        padding: 40px;
-        gap: 25px;
+        padding: 10px 30px;
+        gap: 5px;
     }
 
-    .portfolioSection{
+    /* .portfolioSection{
         gap: 25px;
     }
 
@@ -1202,7 +1349,7 @@ a{
         border-radius: 16px;
         padding: 7px 20px; 
         font-size: 15px;
-    }
+    } */
 
     #headline{
         font-size: 30px;
@@ -1212,29 +1359,58 @@ a{
         font-size: 20px;
     }
 
+    .aboutSection {
+        padding: 30px 40px;
+    }
+
+    .aboutInnerData{
+        max-width: 500px;
+    }
+
+    .aboutImage{
+        width: 200px;
+        height: 200px;
+    }
+
     .aboutHead{
-        font-size: 35px;
+        font-size: 40px;
+        margin-bottom: 6px;
     }
 
-    .sameDes{
-        font-size: 20px;
+    .question {
+        font-size: 25px;
+        margin-bottom: 10px;
     }
 
-    .question{
-        font-size: 30px;
+    .ansQues {
+        font-size: 15px;
     }
 
     .skillHead{
-        font-size: 35px;
+        font-size: 40px;
+        margin-bottom: 10px;
     }
 
-    .skills{
-        font-size: 20px;
+    .skillSection {
+        padding: 0 50px 40px 70px;
     }
 
-    .portfolioBtn{
-        padding: 8px 12px;
+    .skillContainer {
+        gap: 25px;
+    }
+
+    .minorHead{
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+
+    .skillDes{
         font-size: 12px;
+    }
+
+    .skillCard {
+        padding: 18px;
+        border-radius: 8px;
     }
 
     .serviceSection{
@@ -1283,6 +1459,7 @@ a{
 
     .designTag{
         font-size: 20px;
+        margin-bottom: 30px;
     }
 
     .toolBox{
@@ -1305,7 +1482,9 @@ a{
     }
 
     .toolBox{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        margin: 0 auto;
     }   
 
     .toolItem{

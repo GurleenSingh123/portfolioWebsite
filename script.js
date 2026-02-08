@@ -35,7 +35,7 @@ fetch('/navBar.html')
         
         setTimeout(() => {
           window.location.href = href;
-        }, 400);
+        }, 600);
       })
     });
   })
