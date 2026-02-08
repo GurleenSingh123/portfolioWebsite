@@ -11,7 +11,7 @@ fetch('/navBar.html')
     
     menuBtn.addEventListener('click', function (e) {
       e.stopPropagation();
-      navList.classList.toggle('active')
+      navList.classList.toggle('active');
     })
 
       document.addEventListener('click', function (e) {
@@ -28,8 +28,7 @@ fetch('/navBar.html')
     navLinks.forEach(list => {
       list.addEventListener('click', function (e) {
         e.preventDefault();
-        
-        navList.classList.remove('active');
+
         const href = this.href;
         
         document.body.classList.add('fade-out');

@@ -4,6 +4,14 @@ const allDetail = document.querySelectorAll('.serviceDetail');
 learnBtn.forEach(button => {
     button.addEventListener('click', function () {
 
+        if (window.innerWidth <= 830) {
+            this.classList.add('clicked');
+
+            setTimeout(() => {
+                this.classList.remove('clicked');
+            }, 300);
+        }
+
         const serviceData = button.previousElementSibling;
         const isOpen = serviceData.classList.contains('show');
 
