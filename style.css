@@ -719,6 +719,7 @@ body.fade-out {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px 20px;
     font-size: 18px;
+    text-decoration: none;
     border: 2px solid rgb(215, 21, 215);
     border-radius: 25px;
     margin-top: 15px;
@@ -729,6 +730,7 @@ body.fade-out {
 }
 
 .backBtn:hover{
+    text-decoration: none;
     background:  rgb(215, 21, 215);
     color: white;
     box-shadow: 0 0 15px rgb(215, 21, 215);
