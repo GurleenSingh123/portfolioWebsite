@@ -16,18 +16,173 @@
             <div class="homeDetail">
 
                 <div class="homeData">
-                    <h1 id="headline">Hello, I'm Gurleen Singh, a <span class="text">a Frontend Web Developer</span></h1>
+                    <h1 id="headline">Hello, I'm Gurleen Singh, <span class="text">a Frontend Web Developer</span></h1>
                     
                     <p class="shortSummary">I create clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript. I focus on building well-structured layouts, fixing UI issues, and improving website design for better performance and user experience.”</p>
                     
                     <!-- <a href="portfolio.html" class="portfolioBtn">View My Portfolio</a> -->
                 </div>
 
-                <img src="profile-image.jpg" alt="profile image" class="personalImg">
+                <!-- <img src="profile-image.jpg" alt="profile image" class="personalImg"> -->
             </div>
-            
+        </section>
+    </div>    
+
+
+        <section class="aboutHomeSection" id="about">
+
+            <div class="aboutDescription" id="quesAns">
+                <div class="aboutData">
+                    <h3 class="headAbout">About</h3>
+                    <p class="quesAns">I can build modern, responsive, and visually appealing landing pages that effectively showcase your ideas, products, or services. I focus on clean layouts, mobile-friendly design, and smooth user experience to ensure the page looks professional on all devices. My goal is to create landing pages that are attractive, functional, and easy to navigate, helping you make a strong impression online.</p>
+                </div>
+
+                <div class="viewAboutBtn">
+                    <a href="about.html" class="viewBtn">View Full About →</a>
+                </div>
+            </div>
         </section>
         
+
+    <section class="serviceSection" id="services">
+
+        <div class="serHeadSec">
+            <h3 class="serHead">Service</h3>
+            
+            <h1 class="designTag">Services I Provide <span class="spanTag">as a Frontend Developer</span></h1>
+        </div>
+
+        <div class="box">
+            
+            <div class="serviceBox">
+                <h3 class="serviceHead">HTML/CSS Bug Fixing</h3>
+                <p class="serviceDetail">I fix HTML and CSS bugs such as broken layouts, misaligned elements, styling issues, and responsiveness problems. Whether your website looks different on mobile, tablet, or desktop, I can correct the structure and styling to make it consistent and clean. I also help improve code readability and maintain proper layout structure.</p>
+                <button class="learnBtn">Learn More</button>
+            </div>
+            
+            <div class="serviceBox">
+                <h3 class="serviceHead">Landing Page Development</h3>
+                <p class="serviceDetail">I build responsive and well-structured landing pages using HTML, CSS, and basic JavaScript. These landing pages are designed to be fast-loading, visually appealing, and user-focused. I ensure proper section layout, clean design, and smooth basic interactions suitable for portfolios, products, or business promotions.</p>
+                <button class="learnBtn">Learn More</button>
+            </div>
+
+            <div class="serviceBox">
+                <h3 class="serviceHead">Website Layout & Styling Fixes</h3>
+                <p class="serviceDetail">I improve website layout and styling by fixing spacing, alignment, font issues, color inconsistencies, and section positioning. If your website design looks uneven or unprofessional, I can refine the layout to make it visually balanced and responsive across all devices.</p>
+                <button class="learnBtn">Learn More</button>
+            </div>
+        </div>
+
+        <div class="viewServicesBtn">
+            <a href="service.html" class="viewBtn">View Full Service →</a>
+        </div>
+    </section>
+
+    <section class="educationSection" id="education">
+
+        <div class="educationHeadDes">
+            <h3 class="eduHead">Education</h3>
+            <h1 class="educatTag">My Academic and <span class="spanTag">Professional Journey</span></h1>
+        </div>
+
+        <div class="educationDetail">
+            <h2 class="eduText">Academic Background</h2>
+            <div class="eduDetail">
+                <h4 class="eduYear">2024 - ongoing</h4>
+                <p class="edu">Punjab Technical University</p>
+                <h4 class="eduDegree">Bachelor of Computer Application (BCA)</h4>
+            </div>
+        </div>
+
+        <div class="viewEducationBtn">
+            <a href="education.html" class="viewBtn">View Full Education →</a>
+        </div>
+    </section>
+
+
+
+    <div class="bothContactSection">
+
+        <section class="contactSec" id="contact">
+            <h3 class="contactHead">Contact Us</h3>
+            
+            <h3 class="conHead">Let's Work Together</h3>
+            
+            <p class="conDetail">Feel free to reach out for projects, collaborations, or questions.</p>
+            
+            <p class="detailContact">
+                <img src="profile-image.jpg" alt="Name" class="conLogo">
+                <span class="conAnchor">Gurleen Singh</span>
+            </p>
+            
+            <p class="detailContact" id="paraDetailContact">
+                <img src="location-logo.avif" alt="LocationLogo" class="conLogo"> 
+                <span class="conAnchor">India</span>
+            </p>
+        
+        </section>
+    
+        <section class="contactSection">
+            <div class="conRightSection">
+                <form id="myForm" name="contact" method="POST" action="https://formsubmit.co/gurleen321cl@gmail.com">
+                    <input type="hidden" name="_next" value="https://portfolio123website.netlify.app/thankyou.html">
+                    <input type="hidden" name="_subject" value="New Contact Form Message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="inputSection" id="inputSec">
+                        <div class="field">
+                            <input type="text" id="name" name="name" class="inputField" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="field">
+                            <input type="email" id="email" name="email" class="inputField" placeholder="Enter your email" required>
+                            <p class="errMsg" id="emailErr"></p>
+                        </div>
+                    </div>
+
+                    <div class="textField">
+                        <textarea id="msg" name="message" class="inputField" placeholder="Enter here..." required></textarea>
+                        <p class="errMsg" id="msgErr"></p>
+                    </div> 
+
+                    <div class="btnn">
+                        <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
+                    </div>
+
+                    <p id="successMsg"></p>
+
+                </form>
+            </div> 
+        </section>
+    </div>
+
+
+    <section class="footer">
+        <div class="footerDetail">
+            <h1 class="footHead">Gurleen Singh</h1>
+            <p>Frontend Developer creating clean, responsive user-friendly landing pages.</p>
+        </div>
+
+        <div class="footDetail">
+
+            <h1 class="footHead">Quick Links</h1>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="tool.html">Tool</a>
+            <a href="education.html">Education</a>
+            <a href="contactForm.html">Get in Touch</a>
+        </div>
+
+        <div class="footerDetail">
+            <h1 class="footHead">Contact</h1>
+            <p>Gurleen Singh</p>
+            <p>India</p>
+            <p>Available for Freelnace work</p>
+        </div>
+    </section>  
+
+    <script src="service.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
