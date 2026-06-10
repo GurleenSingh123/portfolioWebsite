@@ -23,12 +23,12 @@
 
     <div class="bothContactSection">
 
-        <section class="contactSec" id="contact">
+        <div class="contactSec" id="contact">
             <h3 class="contactHead">Contact Us</h3>
             
-            <h3 class="conHead">Let's Work Together</h3>
+            <h3 class="conHead">Frontend Developer</h3>
             
-            <p class="conDetail">Feel free to reach out for projects, collaborations, or questions.</p>
+            <p class="conDetail">I'm currently seeking Frontend Developer Internship opportunities. Feel free to reach out regarding internships, projects, or any questions.</p>
             
             <p class="detailContact">
                 <img src="profile-image.jpg" alt="Name" class="conLogo">
@@ -40,41 +40,25 @@
                 <span class="conAnchor">India</span>
             </p>
         
-        </section>
-    
-        <section class="contactSection">
-            <div class="conRightSection">
-                <form id="myForm">
+        </div>
 
-                    <div class="inputSection" id="inputSec">
-                        <div class="field">
-                            <input type="text" id="name" name="name" class="inputField" placeholder="Enter your name" required>
-                        </div>
+        <form id="myForm">
+            <input type="text" id="name" class="inputField" placeholder="Your name" required>
 
-                        <div class="field">
-                            <input type="email" id="email" name="email" class="inputField" placeholder="Enter your email" required>
-                            <p class="errMsg" id="emailErr"></p>
-                        </div>
-                    </div>
+            <input type="email" id="email" class="inputField" placeholder="Your email" required>
 
-                    <div class="textField">
-                        <textarea id="msg" name="message" class="inputField" placeholder="Enter here..." required></textarea>
-                        <p class="errMsg" id="msgErr"></p>
-                    </div> 
+            <textarea id="textarea" class="inputField" placeholder="Enter here..." required></textarea>
 
-                    <div class="btnn">
-                        <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
-                    </div>
+            <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
 
-                    <p id="successMsg"></p>
-
-                </form>
-
-            </div> 
-        </section>
+            <p id="successMsg"></p>
+        </form>
         
     </div>
 
+    <div id="footer"></div> 
+
+    <script src="footer.js"></script>
     <script src="script.js"></script>
     <script src="contact.js"></script>
 </body>

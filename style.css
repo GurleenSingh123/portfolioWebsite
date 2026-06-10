@@ -272,13 +272,24 @@ a{
     margin-top: 20px;
 }
 
-.footer{
+.footerMainHead{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.footerSecondaryHead{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgb(171, 169, 169);
+}
+
+.footer{
     background-color: #222;
     border-radius: 20px;
-    padding: 60px;
+    padding: 30px;
     margin-top: 100px;
 }
 
@@ -518,15 +529,21 @@ a{
     box-shadow: 0 8px 20px rgba(150, 10, 200, 0.5);
 }
 
-.toolSection{
-    padding: 60px 40px;
-}
 
 .spanTag{
     background: var(--service--background--color);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.designTag{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .toolSection{
+    padding: 60px 40px;
 }
 
 .toolHeadDes{
@@ -541,11 +558,6 @@ a{
     margin-top: 5px;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.designTag{
-    font-size: 28px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .toolItem{
@@ -598,7 +610,7 @@ a{
     font-weight: bold;
     margin-bottom: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+} */
 
 .educationSection{
     padding: 60px 40px;
@@ -688,12 +700,14 @@ a{
     margin: 6px 0;
     font-size: 20px;
     font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #e5e7eb;
 }
 
 .eduDegree{
     font-size: 20px;
     font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #9ca3af;
 }
 
@@ -753,28 +767,12 @@ a{
     font-size: 30px;
 }
 
-.contactSection {
-    flex: 1;
-}
-
-.conRightSection {
+#myForm{
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
     border: 1px solid rgba(255, 255, 255, 0.1);
-
+    
     padding: 40px;
     border-radius: 15px;
-}
-
-.inputSection {
-    display: flex;
-    flex-direction: column;
-}
-
-.field {
-    width: 100%;
 }
 
 .inputField {
@@ -789,26 +787,6 @@ a{
 
     color: white;
     outline: none;
-}
-
-.inputField::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.textField textarea {
-    height: 120px;
-    resize: none;
-}
-
-.errMsg {
-    color: red;
-    font-size: 17px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-
-.btnn {
-    text-align: center;
 }
 
 .submitBtn {
@@ -839,79 +817,6 @@ a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.thankDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #111;
-    animation: fadeSlide 0.8s ease-out forwards;
-}
-
-@keyframes fadeSlide{
-    from{
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.thankSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    border-radius: 15px;
-    padding: 50px 30px;
-    background-color: #181818;
-    max-width: 450px;
-    box-shadow: 0 0 20px rgba(215, 21, 215, 0.4);
-}
-
-.thankHead{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(215, 21, 215);
-}
-
-.thankMsg{
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ccc;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.icon{
-    font-size: 40px;
-    color: rgb(215, 21, 215);
-}
-
-.backBtn{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px 20px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 25px;
-    margin-top: 15px;
-    color: var(--text--color);
-    background: var(--service--background--color);
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.backBtn:hover{
-    background: #151515;
-    color: white;
-    border: 2px solid #c300ff;
-    transform: translateY(-2px);
-    box-shadow: 0 1px 25px rgba(242, 0, 255, 0.6);
-}
-
 @media (hover: hover) and (pointer: fine) {
 
     .learnBtn{
@@ -932,15 +837,15 @@ a{
 } 
 
 
-@media(max-width:1300px){
+/* @media(max-width:1300px){
 
     .conRightSection{
         width: 90%;
         padding: 40px;
     }
-}
+} */
 
-@media(max-width: 1000px){
+/* @media(max-width: 1000px){
 
     .navBar{
         padding: 15px 20px;
@@ -952,17 +857,29 @@ a{
         width: 80%;
         padding: 35px;
     }
+} */
+
+/* @media(max-width: 940px){
+    #homeNav{
+        display: none;
+    }
 }
 
-@media(max-width: 830px){
-    .contactSection{
+@media(max-width: 860px){
+    #aboutNav{
+        display: none;
+    }
+} */
+
+@media(max-width: 831px){
+    /* .contactSection{
         padding: 20px;
     }
 
     .conRightSection{
         width: 60%;
         margin: 20px;
-    }
+    } */
 
     .navBar{
         padding: 25px;
@@ -987,7 +904,7 @@ a{
         z-index: 9999;
 
         transition: transform 0.3s ease;
-    }
+    } 
 
     .navList.active{
         transform: translateX(0);
@@ -1055,12 +972,7 @@ a{
         font-size: 15px;;
     }
 
-
-
-
     .footer{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         border-radius: 20px;
         padding: 50px;
         margin-top: 80px;
@@ -1142,7 +1054,7 @@ a{
 
     .serviceBox{
         padding: 8px;
-        min-height: 150px; 
+        max-height: 240px; 
     }
 
     .serviceHead{
@@ -1185,7 +1097,7 @@ a{
         box-shadow: 0 1px 25px rgba(242, 0, 255, 0.6);
     }
 
-    .toolSection{
+    /* .toolSection{
         padding: 55px 35px;
     }
 
@@ -1214,7 +1126,7 @@ a{
 
     .toolName{
         font-size: 18px;
-    }
+    } */
 
     .educationSection{
         padding: 55px 35px;
@@ -1261,9 +1173,9 @@ a{
         gap: 10px;
     }
 
-    .contactSec {
+    /* .contactSec {
         flex: 1;
-    }
+    } */
 
     .contactHead {
         font-size: 40px;
@@ -1294,15 +1206,15 @@ a{
         font-size: 27px;
     }
 
-    .contactSection {
+    /* .contactSection {
         flex: 1;
-    }
+    } */
 
-    .conRightSection {
+    /* .conRightSection {
         width: 450px;
         padding: 45px 35px;
         border-radius: 14px;
-    }
+    } */
 
     .inputField {
         width: 100%;
@@ -1315,7 +1227,7 @@ a{
         height: 110px;
     }
 
-    .errMsg {
+    /* .errMsg {
         color: red;
         font-size: 17px;
         margin-top: -10px;
@@ -1324,10 +1236,10 @@ a{
 
     .btnn {
         text-align: center;
-    }
+    } */
 
     .submitBtn {
-        width: 90%;
+        width: 100%;
         padding: 8px;
         border-radius: 25px;
     }
@@ -1336,7 +1248,7 @@ a{
         font-size: 17px;
     }
 
-    .thankSection{
+    /* .thankSection{
         padding: 40px 25px;
     }
 
@@ -1355,7 +1267,7 @@ a{
     .backBtn{
         padding: 8px 17px;
         font-size: 15px;
-    }
+    } */
 
 }
 
@@ -1380,11 +1292,11 @@ a{
     }
 }
 
-@media (max-width: 630px){
-    .conRightSection{
+@media (max-width: 540px){
+    /* .conRightSection{
         width: 70%;
         margin: 17px;
-    }
+    } */
 
     .navBar{
         padding: 20px;
@@ -1450,7 +1362,6 @@ a{
     }
 
    .footer{
-        grid-template-columns: repeat(1, 1fr);
         border-radius: 20px;
         padding: 40px;
         margin-top: 60px;
@@ -1531,7 +1442,7 @@ a{
     }
 
     .serviceBox{
-        max-height: 250px;
+        max-height: 170px;
     }
 
     .serviceHead{
@@ -1564,7 +1475,7 @@ a{
         padding: 8px 15px;
         font-size: 10px;
     }
-
+/* 
     .toolSection{
         padding: 50px 30px;
     }
@@ -1605,7 +1516,7 @@ a{
 
     .toolItem{
         padding: 20px 20px;
-    }
+    } */
 
     .educationSection{
         padding: 50px 30px;
@@ -1674,11 +1585,11 @@ a{
         font-size: 20px;
     }
 
-    .conRightSection {
+    /* .conRightSection {
         width: 300px;
         padding: 40px 30px;
         border-radius: 13px;
-    }
+    } */
 
     .inputField {
         width: 100%;
@@ -1687,16 +1598,16 @@ a{
         margin-bottom: 15px;
     }
 
-    .textField textarea {
+    /* .textField textarea {
         height: 90px;
-    }
-
+    } */
+/* 
     .errMsg {
         font-size: 12px;
-    }
+    } */
 
     .submitBtn {
-        width: 80%;
+        width: 100%;
         padding: 8px;
         border-radius: 25px;
         font-size: 14px;
@@ -1706,7 +1617,7 @@ a{
         font-size: 15px;
     }
 
-    .thankSection{
+    /* .thankSection{
         padding: 30px 20px;
     }
 
@@ -1725,5 +1636,5 @@ a{
     .backBtn{
         padding: 6px 15px;
         font-size: 12px;
-    }
+    } */
 }

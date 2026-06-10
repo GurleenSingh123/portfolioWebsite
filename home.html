@@ -8,6 +8,17 @@
 </head>
 <body>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "I1lnPyEDcDc64bZdQ",
+        });
+    })();
+    </script>
+
     <div id="navBar"></div>
     
     <div class="Portfolio">
@@ -20,7 +31,6 @@
                     
                     <p class="shortSummary">I am a Frontend Web Developer passionate about creating responsive and user-friendly websites using HTML, CSS, and JavaScript. I focus on building clean layouts, writing maintainable code, and delivering a smooth user experience across different devices.</p>
                     
-                    <!-- <a href="portfolio.html" class="portfolioBtn">View My Portfolio</a> -->
                 </div>
 
                 <img src="profile-image.jpg" alt="profile image" class="personalImg">
@@ -47,9 +57,9 @@
     <section class="serviceSection" id="services">
 
         <div class="serHeadSec">
-            <h3 class="serHead">Service</h3>
+            <h3 class="serHead">Skills</h3>
             
-            <h1 class="designTag">Services I Provide <span class="spanTag">as a Frontend Developer</span></h1>
+            <h1 class="designTag">Area I work on <span class="spanTag">as a Frontend Developer</span></h1>
         </div>
 
         <div class="box">
@@ -74,7 +84,7 @@
         </div>
 
         <div class="viewServicesBtn">
-            <a href="service.html" class="viewBtn">View Full Service →</a>
+            <a href="service.html" class="viewBtn">View All Skills →</a>
         </div>
     </section>
 
@@ -103,7 +113,43 @@
 
     <div class="bothContactSection">
 
-        <section class="contactSec" id="contact">
+        <div class="contactSec" id="contact">
+            <h3 class="contactHead">Contact Us</h3>
+            
+            <h3 class="conHead">Frontend Developer</h3>
+            
+            <p class="conDetail">I'm currently seeking Frontend Developer Internship opportunities. Feel free to reach out regarding internships, projects, or any questions.</p>
+            
+            <p class="detailContact">
+                <img src="profile-image.jpg" alt="Name" class="conLogo">
+                <span class="conAnchor">Gurleen Singh</span>
+            </p>
+            
+            <p class="detailContact" id="paraDetailContact">
+                <img src="location-logo.avif" alt="LocationLogo" class="conLogo"> 
+                <span class="conAnchor">India</span>
+            </p>
+        
+        </div>
+
+        <form id="myForm">
+            <input type="text" id="name" class="inputField" placeholder="Your name" required>
+
+            <input type="email" id="email" class="inputField" placeholder="Your email" required>
+
+            <textarea id="textarea" class="inputField" placeholder="Enter here..." required></textarea>
+
+            <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
+
+            <p id="successMsg"></p>
+        </form>
+        
+    </div>
+
+
+    <!-- <div class="bothContactSection">
+
+        <div class="contactSec" id="contact">
             <h3 class="contactHead">Contact Us</h3>
             
             <h3 class="conHead">Let's Work Together</h3>
@@ -120,69 +166,28 @@
                 <span class="conAnchor">India</span>
             </p>
         
-        </section>
-    
-        <section class="contactSection">
-            <div class="conRightSection">
-                <form id="myForm" name="contact" method="POST" action="https://formsubmit.co/gurleen321cl@gmail.com">
-                    <input type="hidden" name="_next" value="https://portfolio123website.netlify.app/thankyou.html">
-                    <input type="hidden" name="_subject" value="New Contact Form Message">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-
-                    <div class="inputSection" id="inputSec">
-                        <div class="field">
-                            <input type="text" id="name" name="name" class="inputField" placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="field">
-                            <input type="email" id="email" name="email" class="inputField" placeholder="Enter your email" required>
-                            <p class="errMsg" id="emailErr"></p>
-                        </div>
-                    </div>
-
-                    <div class="textField">
-                        <textarea id="msg" name="message" class="inputField" placeholder="Enter here..." required></textarea>
-                        <p class="errMsg" id="msgErr"></p>
-                    </div> 
-
-                    <div class="btnn">
-                        <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
-                    </div>
-
-                    <p id="successMsg"></p>
-
-                </form>
-            </div> 
-        </section>
-    </div>
-
-
-    <section class="footer">
-        <div class="footerDetail">
-            <h1 class="footHead">Gurleen Singh</h1>
-            <p>Frontend Developer creating clean, responsive user-friendly landing pages.</p>
         </div>
 
-        <div class="footDetail">
+        <form id="myForm" >
+            <input type="text" id="name" class="inputField" placeholder="Your name" required>
+             
+            <input type="email" id="email" class="inputField" placeholder="Your email" required>
 
-            <h1 class="footHead">Quick Links</h1>
-            <a href="about.html">About</a>
-            <a href="service.html">Services</a>
-            <a href="tool.html">Tool</a>
-            <a href="education.html">Education</a>
-            <a href="contactForm.html">Get in Touch</a>
-        </div>
+            <textarea id="msg" class="inputField" placeholder="Enter here..." required></textarea>
+                   
+            <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
+                 
+            <p id="successMsg"></p>
 
-        <div class="footerDetail">
-            <h1 class="footHead">Contact</h1>
-            <p>Gurleen Singh</p>
-            <p>India</p>
-            <p>Available for Freelnace work</p>
-        </div>
-    </section>  
+        </form>
+    </div> -->
 
+
+    <div id="footer"></div> 
+
+    <script src="footer.js"></script>
     <script src="service.js"></script>
+    <script src="contact.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
