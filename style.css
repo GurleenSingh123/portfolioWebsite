@@ -542,76 +542,6 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* .toolSection{
-    padding: 60px 40px;
-}
-
-.toolHeadDes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.toolWork{
-    font-size: 15px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.toolItem{
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 40px 25px;
-    border-radius: 15px;
-    transition: 0.3s ease, border-image 0.1s ease;
-}
-
-.toolItem:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(208, 0, 255, 0.447);
-    border: 2px solid rgb(208, 2, 254);
-}
-
-.tool{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.toolBox{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.toolHead{
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.logoImg{
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    background: #ffffff;
-    padding: 14px;
-    margin-bottom: 30px;
-    border-radius: 18px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.838);
-}
-
-.toolName{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-} */
-
 .educationSection{
     padding: 60px 40px;
 }
@@ -836,51 +766,7 @@ a{
     }
 } 
 
-
-/* @media(max-width:1300px){
-
-    .conRightSection{
-        width: 90%;
-        padding: 40px;
-    }
-} */
-
-/* @media(max-width: 1000px){
-
-    .navBar{
-        padding: 15px 20px;
-    }
-
-
-
-    .conRightSection{
-        width: 80%;
-        padding: 35px;
-    }
-} */
-
-/* @media(max-width: 940px){
-    #homeNav{
-        display: none;
-    }
-}
-
-@media(max-width: 860px){
-    #aboutNav{
-        display: none;
-    }
-} */
-
 @media(max-width: 831px){
-    /* .contactSection{
-        padding: 20px;
-    }
-
-    .conRightSection{
-        width: 60%;
-        margin: 20px;
-    } */
-
     .navBar{
         padding: 25px;
     }
@@ -1097,37 +983,6 @@ a{
         box-shadow: 0 1px 25px rgba(242, 0, 255, 0.6);
     }
 
-    /* .toolSection{
-        padding: 55px 35px;
-    }
-
-    .toolWork{
-        font-size: 13px;
-    }
-
-    .designTag{
-        font-size: 25px;
-    }
-
-    .toolBox{
-        gap: 25px;
-        margin-top: 40px;
-        padding: 0 20px;
-    }
-
-    .toolHead{
-        font-size: 35px;
-    }
-
-    .logoImg{
-        width: 60px;
-        height: 60px;
-    }
-
-    .toolName{
-        font-size: 18px;
-    } */
-
     .educationSection{
         padding: 55px 35px;
     }
@@ -1173,10 +1028,6 @@ a{
         gap: 10px;
     }
 
-    /* .contactSec {
-        flex: 1;
-    } */
-
     .contactHead {
         font-size: 40px;
         margin-bottom: 8px;
@@ -1206,16 +1057,6 @@ a{
         font-size: 27px;
     }
 
-    /* .contactSection {
-        flex: 1;
-    } */
-
-    /* .conRightSection {
-        width: 450px;
-        padding: 45px 35px;
-        border-radius: 14px;
-    } */
-
     .inputField {
         width: 100%;
         border-radius: 10px;
@@ -1227,17 +1068,6 @@ a{
         height: 110px;
     }
 
-    /* .errMsg {
-        color: red;
-        font-size: 17px;
-        margin-top: -10px;
-        margin-bottom: 10px;
-    }
-
-    .btnn {
-        text-align: center;
-    } */
-
     .submitBtn {
         width: 100%;
         padding: 8px;
@@ -1247,27 +1077,6 @@ a{
     #successMsg{
         font-size: 17px;
     }
-
-    /* .thankSection{
-        padding: 40px 25px;
-    }
-
-    .thankHead{
-        font-size: 25px;
-    }
-
-    .thankMsg{
-        font-size: 17px;
-    }
-
-    .icon{
-        font-size: 30px;
-    }
-
-    .backBtn{
-        padding: 8px 17px;
-        font-size: 15px;
-    } */
 
 }
 
@@ -1293,11 +1102,6 @@ a{
 }
 
 @media (max-width: 540px){
-    /* .conRightSection{
-        width: 70%;
-        margin: 17px;
-    } */
-
     .navBar{
         padding: 20px;
     }
@@ -1475,48 +1279,6 @@ a{
         padding: 8px 15px;
         font-size: 10px;
     }
-/* 
-    .toolSection{
-        padding: 50px 30px;
-    }
-
-    .toolWork{
-        font-size: 12px;
-    }
-
-    .designTag{
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .toolBox{
-        gap: 25px;
-        margin-top: 40px;
-    }
-
-    .toolHead{
-        font-size: 30px;
-        margin-bottom: 5px;
-    }
-
-    .logoImg{
-        width: 55px;
-        height: 55px;
-    }
-
-    .toolName{
-        font-size: 16px;
-    }
-
-    .toolBox{
-        grid-template-columns: repeat(1, 1fr);
-        width: 70%;
-        margin: 0 auto;
-    }   
-
-    .toolItem{
-        padding: 20px 20px;
-    } */
 
     .educationSection{
         padding: 50px 30px;
@@ -1585,26 +1347,12 @@ a{
         font-size: 20px;
     }
 
-    /* .conRightSection {
-        width: 300px;
-        padding: 40px 30px;
-        border-radius: 13px;
-    } */
-
     .inputField {
         width: 100%;
         border-radius: 12px;
         padding: 8px;
         margin-bottom: 15px;
     }
-
-    /* .textField textarea {
-        height: 90px;
-    } */
-/* 
-    .errMsg {
-        font-size: 12px;
-    } */
 
     .submitBtn {
         width: 100%;
@@ -1616,25 +1364,4 @@ a{
     #successMsg{
         font-size: 15px;
     }
-
-    /* .thankSection{
-        padding: 30px 20px;
-    }
-
-    .thankHead{
-        font-size: 20px;
-    }
-
-    .thankMsg{
-        font-size: 15px;
-    }
-
-    .icon{
-        font-size: 25px;
-    }
-
-    .backBtn{
-        padding: 6px 15px;
-        font-size: 12px;
-    } */
 }
