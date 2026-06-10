@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "I1lnPyEDcDc64bZdQ",
+        });
+    })();
+    </script>
+
     <div id="navBar"></div>
 
     <div class="bothContactSection">
@@ -32,11 +44,7 @@
     
         <section class="contactSection">
             <div class="conRightSection">
-                <form id="myForm" name="contact" method="POST" action="https://formsubmit.co/gurleen321cl@gmail.com">
-                    <input type="hidden" name="_next" value="https://portfolio123website.netlify.app/thankyou.html">
-                    <input type="hidden" name="_subject" value="New Contact Form Message">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
+                <form id="myForm">
 
                     <div class="inputSection" id="inputSec">
                         <div class="field">

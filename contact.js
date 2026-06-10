@@ -10,6 +10,47 @@ const successMsg = document.getElementById('successMsg');
 
 submitBtn.disabled = true;
 
+// form.addEventListener('submit', function(e) {
+//     e.preventDefault();
+    
+//     emailjs.send("service_lbeonpb", "template_fci0fgg", {
+//         name: document.getElementById("name").value,
+//         email: document.getElementById("email").value,
+//         message: document.getElementById("textarea").value
+//     })
+
+//     form.reset();
+
+//     successMsg.innerText = "Message sent successfully!";
+
+//     setTimeout(() => {
+//         successMsg.innerText = "";
+//     }, 3000);
+// })
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.send("service_lbeonpb", "template_fci0fgg", {
+        name: nameInput.value,
+        email: emailInput.value,
+        message: msgInput.value
+    })
+    .then(() => {
+        form.reset();
+
+        successMsg.innerText = "Message sent successfully!";
+
+        setTimeout(() => {
+            successMsg.innerText = "";
+        }, 3000);
+    })
+    .catch((error) => {
+        successMsg.innerText = "Failed to send message!";
+        console.log(error);
+    });
+});
+
 msgInput.addEventListener('input', function() {
     if(msgInput.value.length > 0 && msgInput.value.length < 20){
         msgErr.textContent = 'Minimum Character 20';
@@ -41,14 +82,6 @@ emailInput.addEventListener('input', function () {
 
     checkInput();
     
-})
-
-form.addEventListener('submit', function () {
-    
-    if (submitBtn.disabled) return;
-
-    successMsg.textContent = 'Submitting... ';
-    submitBtn.disabled = true;
 })
 
 function checkInput(){
